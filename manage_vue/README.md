@@ -1,4 +1,4 @@
-# manager_front
+# manage_vue
 
 ## Project setup
 ```
