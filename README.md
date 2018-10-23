@@ -1,8 +1,8 @@
 # lyrics_manager
-歌詞管理アプリ
 ====
 
 ## Overview
+歌詞管理アプリ
 
 ## Description
 
@@ -38,4 +38,4 @@ $npm install vue
 
 ## Author
 
-[tcnksm](https://github.com/technicakidz)
+[technicakidz](https://github.com/technicakidz)
