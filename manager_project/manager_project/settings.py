@@ -25,7 +25,7 @@ SECRET_KEY = '!z%i*@k-413m3thy5sh!au(xaias0c2k@r&@)ddgiq0s=r6f0f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -77,15 +77,8 @@ WSGI_APPLICATION = 'manager_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lyrics_manager',
-        'USER': 'user', # DBへ接続するユーザIDを設定
-        'PASSWORD': 'pass', # DBへ接続するユーザIDのパスワードを設定
-        'HOST': 'localhost',
-        'PORT': '8001',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
