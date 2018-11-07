@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
     'rest_framework',
+    'manager',
 ]
 
 MIDDLEWARE = [
@@ -74,18 +74,10 @@ WSGI_APPLICATION = 'manager_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'lyrics_manager',
-        'USER': 'user', # DBへ接続するユーザIDを設定
-        'PASSWORD': 'pass', # DBへ接続するユーザIDのパスワードを設定
-        'HOST': 'localhost',
-        'PORT': '8001',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
