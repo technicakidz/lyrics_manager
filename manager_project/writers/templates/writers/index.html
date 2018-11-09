@@ -1,0 +1,9 @@
+{% if post_list %}
+    <ul>
+    {% for post in post_list %}
+        <li><a href="/writers/{{ post.author }}/">{{ post.text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No writers are available.</p>
+{% endif %}
