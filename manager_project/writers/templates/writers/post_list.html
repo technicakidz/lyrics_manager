@@ -1,11 +1,10 @@
-<!-- {% if post_list %}
-<h1>post.author</h1>
+<h1>post titles</h1>
+{% if post_lists %}
     <ul>
-    {% for post in post_list %}
-        <li><a href="/writers/{{ post.author }}/">{{ post.text }}</a></li>
+    {% for post in post_lists %}
+        <li><a href="/writers/{{ post.title }}/">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No writers are available.</p>
-{% endif %} -->
-test
+{% endif %}
