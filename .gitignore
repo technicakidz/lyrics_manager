@@ -3,6 +3,7 @@ https://github.com/simonwhitaker/gibo
 .DS_Store
 manager_project/.DS_Store
 manager_project/manager_project/__pycache__
+manager_project/manager_project/.DS_store
 
 gibo 2.1.0 by Simon Whitaker <sw@netcetera.org>
 https://github.com/simonwhitaker/gibo
