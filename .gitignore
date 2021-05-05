@@ -213,6 +213,7 @@ flycheck_*.el
 ### macOS ###
 # General
 .DS_Store
+<<<<<<< HEAD
 .AppleDouble
 .LSOverride
 
@@ -360,3 +361,11 @@ npm-debug.log
 yarn-error.log
 
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,visualstudiocode,django,vue,vuejs,vim,emacs
+=======
+manager_project/.DS_Store
+manager_project/manager_project/__pycache__
+manager_project/manager_project/.DS_store
+
+gibo 2.1.0 by Simon Whitaker <sw@netcetera.org>
+https://github.com/simonwhitaker/gibo
+>>>>>>> 2b68a9cdf577839f23f7ca683ef3ce4c313ef157
